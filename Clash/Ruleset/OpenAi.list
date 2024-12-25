@@ -1,5 +1,8 @@
 # 内容：OpenAi
 # 数量：16条
+DOMAIN,gemini.google.com
+DOMAIN,alkalimakersuite-pa.clients6.google.com
+DOMAIN,generativelanguage.googleapis.com
 DOMAIN-KEYWORD,openai
 DOMAIN-SUFFIX,auth0.com
 DOMAIN-SUFFIX,challenges.cloudflare.com

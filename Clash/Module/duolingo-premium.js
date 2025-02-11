@@ -7,6 +7,12 @@ body = body
   .replace(/\\"has_item_premium_subscription\\":false/g, '\\"has_item_premium_subscription\\":true')
   .replace(/\\"subscriberLevel\\":\\"FREE\\"/g, '\\"subscriberLevel\\":\\"PREMIUM\\"');
 
+// 修改时间宝999
+body = body
+  .replace(/\\"timerBoosts\\":%d+/g, '\\"timerBoosts\\":999')
+  .replace(/\\"hasPurchasedTimerBoost\\":false/g, '\\"hasPurchasedTimerBoost\\":true');
+
+
 // 伪造购买记录，添加 Premium 订阅
 body = body.replace(
   /\\"shopItems\\".*?\\"totalXp\\"/,

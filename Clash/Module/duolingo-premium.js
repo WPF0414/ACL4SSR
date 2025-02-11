@@ -5,14 +5,23 @@ let body = $response.body;
 // 修改订阅状态，解锁 Premium
 body = body
   .replace(/\\"has_item_premium_subscription\\":false/g, '\\"has_item_premium_subscription\\":true')
-  .replace(/\\"subscriberLevel\\":\\"FREE\\"/g, '\\"subscriberLevel\\":\\"PREMIUM\\"');
+  .replace(/\\"subscriberLevel\\":\\"FREE\\"/g, '\\"subscriberLevel\\":\\"PREMIUM\\"')
 
-// 修改时间宝999
+// 修改时间宝
 body = body
   .replace(/\\"timerBoosts\\":\d+/g, '\\"timerBoosts\\":999')
   .replace(/\\"hasPurchasedTimerBoost\\":false/g, '\\"hasPurchasedTimerBoost\\":true');
 
+// 修改连胜激冻
+body = body
+  .replace(/\\"num_item_streak_freeze_total\\":\d+/g, '\\"num_item_streak_freeze_total\\":999')
+  .replace(/\\"num_item_streak_freeze\\":\d+/g, '\\"num_item_streak_freeze_total\\":999')
+  .replace(/\\"has_item_streak_freeze\\":false/g, '\\"has_item_streak_freeze\\":true');
 
+// 修改宝石
+body = body
+  .replace(/\\"gems\\":\d+/g, '\\"gems\\":99999');
+  
 // 伪造购买记录，添加 Premium 订阅
 body = body.replace(
   /\\"shopItems\\".*?\\"totalXp\\"/,

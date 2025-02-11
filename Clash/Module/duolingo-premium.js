@@ -14,8 +14,8 @@ body = body
 
 // 修改连胜激冻
 body = body
-  .replace(/\\"num_item_streak_freeze_total\\":\d+/g, '\\"num_item_streak_freeze_total\\":999')
-  .replace(/\\"num_item_streak_freeze\\":\d+/g, '\\"num_item_streak_freeze_total\\":999')
+  .replace(/\\"num_item_streak_freeze_total\\":\d+/g, '\\"num_item_streak_freeze_total\\":2')
+  .replace(/\\"num_item_streak_freeze\\":\d+/g, '\\"num_item_streak_freeze\\":2')
   .replace(/\\"has_item_streak_freeze\\":false/g, '\\"has_item_streak_freeze\\":true');
 
 // 修改宝石

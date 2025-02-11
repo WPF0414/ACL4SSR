@@ -9,7 +9,7 @@ body = body
 
 // 修改时间宝999
 body = body
-  .replace(/\\"timerBoosts\\":%d+/g, '\\"timerBoosts\\":999')
+  .replace(/\\"timerBoosts\\":\d+/g, '\\"timerBoosts\\":999')
   .replace(/\\"hasPurchasedTimerBoost\\":false/g, '\\"hasPurchasedTimerBoost\\":true');
 
 

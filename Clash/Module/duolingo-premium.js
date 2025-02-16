@@ -10,7 +10,7 @@ const expectedExpiration = purchaseDate + 365 * 24 * 60 * 60;
 // 3. 当前时间戳
 const now = Math.floor(new Date().getTime() / 1000);
 
-// 4. 当前时间+30分钟的时间戳
+// 4. 当前时间+1天的时间戳
 const oneDayLater = Math.floor((new Date().getTime() + 24 * 60 * 60 * 1000) / 1000);
 
 

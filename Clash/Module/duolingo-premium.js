@@ -24,9 +24,11 @@ body = body
 
 
 
+
+
 const purchaseDate = Math.trunc(Date.now() / 1000);
-const expiresDate = now + 365 * 24 * 60 * 60;
-const expiresIn30Minutes = now + 30 * 60;
+const expiresDate = purchaseDate + 365 * 24 * 60 * 60;
+const expiresIn30Minutes = purchaseDate + 30 * 60;
 
 
 // 伪造购买记录，添加 Premium 订阅

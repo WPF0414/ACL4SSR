@@ -30,7 +30,7 @@ body = body.replace(
 
 // 修改订阅状态，解锁 Premium
 body = body
-  .replace(/\\"has_item_premium_subscription\\":false/g, '\\"has_item_premium_subscription\\":true')
+  .replace(/\\"has_item_gold_subscription\\":false/g, '\\"has_item_gold_subscription\\":true')
   .replace(/\\"subscriberLevel\\":\\"FREE\\"/g, '\\"subscriberLevel\\":\\"GOLD\\"')
 
 // 修改时间宝

@@ -10,10 +10,12 @@ let body = $response.body;
 // 解析外层 JSON
 let responsesObj = JSON.parse(body);
 
-// 遍历 responses 数组，处理每个 body
-responsesObj.responses.forEach(response => {
+// 只处理第一个 response 的 body
+if (responsesObj.responses && responsesObj.responses.length > 0) {
+  let firstResponse = responsesObj.responses[0];
+  
   // 解析 body 字符串为 JSON 对象
-  let bodyObj = JSON.parse(response.body);
+  let bodyObj = JSON.parse(firstResponse.body);
 
   // 修改 shopItems
   bodyObj.shopItems = [
@@ -99,8 +101,8 @@ responsesObj.responses.forEach(response => {
   bodyObj.gems = 99999;
 
   // 将修改后的 bodyObj 序列化回转义字符串
-  response.body = JSON.stringify(bodyObj);
-});
+  firstResponse.body = JSON.stringify(bodyObj);
+}
 
 // 将外层对象序列化回字符串
 body = JSON.stringify(responsesObj);

@@ -34,18 +34,18 @@ body = body
   .replace(/\\"subscriberLevel\\":\\"FREE\\"/g, '\\"subscriberLevel\\":\\"GOLD\\"')
 
 // 修改时间宝
-// body = body
-//   .replace(/\\"timerBoosts\\":\d+/g, '\\"timerBoosts\\":999')
-//   .replace(/\\"hasPurchasedTimerBoost\\":false/g, '\\"hasPurchasedTimerBoost\\":true');
+body = body
+  .replace(/\\"timerBoosts\\":\d+/g, '\\"timerBoosts\\":999')
+  .replace(/\\"hasPurchasedTimerBoost\\":false/g, '\\"hasPurchasedTimerBoost\\":true');
 
 // 修改连胜激冻
-// body = body
-//   .replace(/\\"num_item_streak_freeze_total\\":\d+/g, '\\"num_item_streak_freeze_total\\":2')
-//   .replace(/\\"num_item_streak_freeze\\":\d+/g, '\\"num_item_streak_freeze\\":2')
-//   .replace(/\\"has_item_streak_freeze\\":false/g, '\\"has_item_streak_freeze\\":true');
+body = body
+  .replace(/\\"num_item_streak_freeze_total\\":\d+/g, '\\"num_item_streak_freeze_total\\":2')
+  .replace(/\\"num_item_streak_freeze\\":\d+/g, '\\"num_item_streak_freeze\\":2')
+  .replace(/\\"has_item_streak_freeze\\":false/g, '\\"has_item_streak_freeze\\":true');
 
 // 修改宝石
-// body = body
-//   .replace(/\\"gems\\":\d+/g, '\\"gems\\":99999');
+body = body
+  .replace(/\\"gems\\":\d+/g, '\\"gems\\":99999');
 
 $done({ body });

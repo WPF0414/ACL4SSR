@@ -16,7 +16,6 @@ DOMAIN-SUFFIX,ads.inmobi.com,REJECT
 DOMAIN-SUFFIX,ads.pubmatic.com,REJECT
 DOMAIN-SUFFIX,adsappier.com,REJECT
 DOMAIN-SUFFIX,amazon-adsystem.com,REJECT
-#DOMAIN-SUFFIX,app-analytics-services.com,REJECT
 DOMAIN-SUFFIX,appier.net,REJECT
 DOMAIN-SUFFIX,appiersig.com,REJECT
 DOMAIN-SUFFIX,au.w.inmobi.com,REJECT

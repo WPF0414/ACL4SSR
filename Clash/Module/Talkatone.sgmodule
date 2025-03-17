@@ -37,7 +37,6 @@ DOMAIN-SUFFIX,ets-ap-southeast-1.track.smaato.net,REJECT
 DOMAIN-SUFFIX,exchange-b-events.inner-active.mobi,REJECT
 DOMAIN-SUFFIX,firebaseinstallations.googleapis.com,REJECT
 DOMAIN-SUFFIX,firebaselogging-pa.googleapis.com,REJECT
-DOMAIN-SUFFIX,firebaseremoteconfig.googleapis.com,REJECT
 DOMAIN-SUFFIX,firebase-settings.crashlytics.com,REJECT
 DOMAIN-SUFFIX,googleads.g.doubleclick.net,REJECT
 DOMAIN-SUFFIX,googleads.g.doubleclick-cn.net,REJECT

@@ -8,4 +8,5 @@
 多邻国会员 = type=http-response,pattern=^https:\/\/ios-api-2\.duolingo.cn\/2023-05-23\/batch,requires-body=1,max-size=-1,binary-body-mode=0,timeout=60,script-path=https://raw.githubusercontent.com/WPF0414/ACL4SSR/refs/heads/master/Clash/Module/duolingo-gold.js,script-update-interval=0
 
 [MITM]
+tcp-connection = true
 hostname = ios-api-2.duolingo.cn

@@ -9,4 +9,4 @@
 
 [MITM]
 tcp-connection = true
-hostname = ios-api-2.duolingo.cn
+hostname = %APPEND% ios-api-2.duolingo.cn

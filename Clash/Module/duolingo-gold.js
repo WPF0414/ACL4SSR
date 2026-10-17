@@ -15,7 +15,7 @@ const oneDayLater = Math.floor((new Date().getTime() + 24 * 60 * 60 * 1000) / 10
 
 
 let body = $response.body;
-  
+
 // 伪造购买记录，添加 Premium 订阅
 body = body.replace(
   /"shopItems".*?"totalXp"/,

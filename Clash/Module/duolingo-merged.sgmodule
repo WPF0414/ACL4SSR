@@ -1,0 +1,13 @@
+#!name=多邻国会员解锁（合并版）
+#!desc=多邻国 Premium/Gold 会员解锁（batch + users 接口）
+#!category=InjectX
+# 合并自：duolingo-premium.sgmodule + duolingo-gold.sgmodule
+# 更新日期：2026.11.16
+# 版本：2.0
+
+[Script]
+多邻国会员 = type=http-response,pattern=^https:\/\/ios-api-2\.duolingo\.cn\/2023-05-23\/(batch|users\/\d+\?fields=.*),requires-body=1,max-size=-1,binary-body-mode=0,timeout=60,script-path=duolingo-merged.js,script-update-interval=0,engine=webview
+
+[MITM]
+tcp-connection = true
+hostname = %APPEND% ios-api-2.duolingo.cn

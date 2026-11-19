@@ -1,5 +1,5 @@
 # 内容：OpenAi
-# 数量：16条
+# 数量：20条
 DOMAIN,gemini.google.com
 DOMAIN,alkalimakersuite-pa.clients6.google.com
 DOMAIN,generativelanguage.googleapis.com
@@ -19,3 +19,4 @@ DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,openaiapi-site.azureedge.net
 DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,stripe.com
+DOMAIN-SUFFIX,sora.com
